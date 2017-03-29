@@ -8,6 +8,8 @@ import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { NvabarComponent } from './components/shared/nvabar/nvabar.component';
 
+import { APP_ROUTING } from './app.routes';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { NvabarComponent } from './components/shared/nvabar/nvabar.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
