@@ -10,6 +10,9 @@ import { NvabarComponent } from './components/shared/nvabar/nvabar.component';
 
 import { APP_ROUTING } from './app.routes';
 
+/*Services*/
+import { SpotifyService } from './services/spotify.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +26,7 @@ import { APP_ROUTING } from './app.routes';
     HttpModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [SpotifyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
