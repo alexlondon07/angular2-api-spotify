@@ -17,5 +17,9 @@
     "typeRoots": [
       "../node_modules/@types"
     ]
-  }
+  },
+  "excude":[
+    "../node_modules"
+  ],
+  "compileOnSave": false
 }
