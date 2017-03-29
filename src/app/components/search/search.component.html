@@ -2,14 +2,15 @@
   <div class="row">
 
     <div class="col-md-3">
-      {{ termino }}
       <label for="termino">Buscador de artistas</label>
       <input [(ngModel)]="termino" (keyup)="searchArtis()" type="text" class="form-control" placeholder="Buscar">
     </div>
 
     <div class="col-md-9">
       <div class="row">
-        <div *ngFor="let item of _spotifyService.artists" class="text-center col-md-3">
+        <div class="text-center col-md-3 puntero"
+            [routerLink] ="['/artist', item.id]"        
+            *ngFor="let item of _spotifyService.artists" >
           <img [src]="item.images | sinfoto" width="150" height="150" class="img-fluid img-thumbnail">
           <p>
             {{ item.name }}

@@ -13,6 +13,7 @@ import { APP_ROUTING } from './app.routes';
 /*Services*/
 import { SpotifyService } from './services/spotify.service';
 import { SinfotoPipe } from './pipes/sinfoto.pipe';
+import { ArtistsComponent } from './components/artists/artists.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SinfotoPipe } from './pipes/sinfoto.pipe';
     HomeComponent,
     SearchComponent,
     NvabarComponent,
-    SinfotoPipe
+    SinfotoPipe,
+    ArtistsComponent
   ],
   imports: [
     BrowserModule,
